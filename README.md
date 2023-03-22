@@ -1,4 +1,4 @@
-# study_Cpp
+# study-Cpp-2023
 C++ 학습 리포지토리
 
 ## 1일차
