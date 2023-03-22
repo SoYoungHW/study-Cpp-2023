@@ -19,6 +19,6 @@ C++ 학습 리포지토리
     - using
 2. C 기초 문법 학습
   - [x] const
-  - [x] 메모리 공간
+  - [x] 실행중인 프로그램의 메모리 공간
     - 내부 구조 및 주소
   - [x] Call-by-value / Call-by-reference  
