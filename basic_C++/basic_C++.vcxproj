@@ -19,7 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Day02\RefSwap.cpp" />
+    <ClCompile Include="Day03\point.cpp" />
+    <ClCompile Include="Day03\Rectangle.cpp" />
+    <ClCompile Include="Day03\RectangleFaultFind.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Day03\point.h" />
+    <ClInclude Include="Day03\Rectangle.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
