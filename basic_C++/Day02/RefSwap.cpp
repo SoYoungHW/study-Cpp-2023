@@ -1,5 +1,7 @@
 #include <iostream>
-using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
 
 void swapByRef2(int& ref1, int& ref2)
 {
