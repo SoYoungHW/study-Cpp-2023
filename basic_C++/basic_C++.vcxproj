@@ -19,13 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Day03\point.cpp" />
-    <ClCompile Include="Day03\Rectangle.cpp" />
-    <ClCompile Include="Day03\RectangleFaultFind.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Day03\point.h" />
-    <ClInclude Include="Day03\Rectangle.h" />
+    <ClCompile Include="Day04\Destructor.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -52,7 +46,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
