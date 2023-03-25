@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 
 using std::cin;
@@ -8,20 +9,24 @@ using std::endl;
 class MyClass
 {
 private:
-	char id;
+	char* id;
 	char name[10];
 	int age;
 
 public:
-	MyClass(char xid, const char* xname, int xage) ; // 생성자 선언(원형)
+	MyClass(const char* xid, const char* xname, int xage);  // 생성자 선언(원형)
 	void getData();
+	~MyClass();
 };
 
-MyClass::MyClass(char xid, char* xname, int xage) : id(xid), age(xage)
-{
+MyClass::MyClass(const char* xid, const char* xname, int xage) : age(xage)
+{										// 멤버 이니셜라이저(보통은 선언에)
 	cout << "생성자 호출" << endl;
-	strcpy_s(name, xname);
-};  // 멤버 이니셜라이저
+	int len = strlen(xid) + 1;
+	id = new char[len]; // 메모리 동적할당
+	strcpy(id, xid);
+	strcpy(name, xname);
+}; 
 
 void MyClass::getData()
 {
@@ -30,9 +35,15 @@ void MyClass::getData()
 	cout << "나이 : " << age << endl;
 }
 
+MyClass::~MyClass() // 소멸자
+{
+	delete[]id;
+	cout << "소멸자 호출" << endl;
+}
+
 int main(void)
 {
-	MyClass Me('A', "홍길동", 15);
+	MyClass Me("A", "홍길동", 15);
 	Me.getData();
 
 	return 0;
