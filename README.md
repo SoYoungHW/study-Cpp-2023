@@ -59,7 +59,13 @@ C++ 학습 리포지토리
   - [x] 복사 생성자
     - 얕은 복사(Shallow copy)
     - 깊은 복사(deep copy)
-    - [ ] 복사 생성자 호출 시점
+    - [x] 복사 생성자 호출 시점
 
 ## 6일차
 1. C++ 기초 학습
+  - [x] friend 선언
+  - [x] stasic
+  - [x] 상속(Inheritance)
+      - 상속 기본 문법
+      - protected 선언 및 상속의 형태
+      - 상속을 위한 조건
