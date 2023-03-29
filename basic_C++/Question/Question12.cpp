@@ -12,9 +12,22 @@ struct Point
 	int ypos;
 
 	// 다음의 함수를 구조체 안에 정의하기
-	void MovePos(int x, int y); // 점의 좌표이동
-	void AddPoint(const Point& pos); // 점의 좌표증가
-	void ShowPosition(); // 현재 x, y 좌표정보 출력
+	void MovePos(int x, int y)
+	{
+		xpos += x;
+		ypos += y;
+	} // 점의 좌표이동
+
+	void AddPoint(const Point& pos) // 점의 좌표증가
+	{
+		xpos += pos.xpos;
+		ypos += pos.ypos;
+	}
+
+	void ShowPosition()
+	{
+		cout << "[" << xpos << ", " << ypos << "]" << endl;
+	}// 현재 x, y 좌표정보 출력
 };
 
 /* 메인함수 */
