@@ -1,4 +1,4 @@
-/* ë™ì í• ë‹¹ ì¶”ê°€ */
+/* µ¿ÀûÇÒ´ç Ãß°¡ */
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 using std::cout;
@@ -23,21 +23,21 @@ public:
 	}
 	void ShowPerson()
 	{
-		cout << "ì´ë¦„ : " << name << endl;
-		cout << "ìƒë…„ì›”ì¼ : " << birthday << endl << endl;
+		cout << "ÀÌ¸§ : " << name << endl;
+		cout << "»ı³â¿ùÀÏ : " << birthday << endl << endl;
 	}
 	~Person()
 	{
-		delete[]name;
-		cout << "ì†Œë©¸ìí˜¸ì¶œ" << endl;
+		delete[] name;
+		cout << "¼Ò¸êÀÚÈ£Ãâ" << endl;
 	}
 };
 
 int main(void)
 {
-	Person p1("í™ê¸¸ë™", 19990909);
+	Person p1("È«±æµ¿", 19990909);
 	p1.ShowPerson();
-	
+
 	Person p2(p1);
 	p2.ShowPerson();
 
