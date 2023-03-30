@@ -1,4 +1,4 @@
-/* µ¿ÀûÇÒ´ç Ãß°¡ */
+/* ë™ì í• ë‹¹ ì¶”ê°€ */
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 using std::cout;
@@ -7,35 +7,35 @@ using std::endl;
 class Person
 {
 private:
-	char name[30];
+	char* name;
 	int birthday;
 
 public:
 	Person(const char* myname, int mybirthday) : birthday(mybirthday)
 	{
-		char* name = new char[strlen(myname) + 1];
+		name = new char[strlen(myname) + 1];
 		strcpy(name, myname);
 	}
 	Person(const Person& copy) : birthday(copy.birthday)
 	{
-		char* name = new char[strlen(copy.name) + 1];
+		name = new char[strlen(copy.name) + 1];
 		strcpy(name, copy.name);
 	}
 	void ShowPerson()
 	{
-		cout << "ÀÌ¸§ : " << name << endl;
-		cout << "»ı³â¿ùÀÏ : " << birthday << endl << endl;
+		cout << "ì´ë¦„ : " << name << endl;
+		cout << "ìƒë…„ì›”ì¼ : " << birthday << endl << endl;
 	}
 	~Person()
 	{
 		delete[]name;
-		cout << "¼Ò¸êÀÚÈ£Ãâ" << endl;
+		cout << "ì†Œë©¸ìí˜¸ì¶œ" << endl;
 	}
 };
 
 int main(void)
 {
-	Person p1("È«±æµ¿", 19990909);
+	Person p1("í™ê¸¸ë™", 19990909);
 	p1.ShowPerson();
 	
 	Person p2(p1);
