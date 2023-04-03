@@ -7,11 +7,12 @@ int main(void)
 	char ch;
 	double val2;
 
+	cout << "Calculator Console Application" << endl << endl;
+	cout << "Please enter the operation to perform.Format: a + b | a - b | a * b | a / b" << endl;
+	cout << "Press 'ctrl + c' to exit the program" << endl << endl;
+
 	while (true) // 반복
 	{
-		cout << "Calculator Console Application" << endl << endl;
-		cout << "Please enter the operation to perform.Format: a + b | a - b | a * b | a / b" << endl;
-		cout << "Press 'ctrl + c' to exit the program" << endl << endl;
 		cout << "input >> ";
 		cin >> val1; // 첫번째 숫자 입력
 		cin >> ch;	// 연산자 입력

@@ -29,6 +29,12 @@ double Calculator::Calculate(double x, char cper, double y) // 계산 멤버함수 정�
 
 	else if (oper == '/') // 나눗셈 연산
 		return (num1 / num2);
+
+	else
+	{
+		cin.clear();
+		cin.ignore(100, '\n');
+	}
 }
 
 void Calculator::ShowCalculate() // 결과출력 멤버함수 정의

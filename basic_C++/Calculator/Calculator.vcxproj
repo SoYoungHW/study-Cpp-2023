@@ -126,13 +126,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="Calculator.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Calculator.cpp" />
-    <ClCompile Include="CalculatorTutorial.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
